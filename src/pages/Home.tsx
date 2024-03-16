@@ -44,7 +44,7 @@ const Home = () => {
           <div className="flex flex-col justify-between w-full md:flex-row flex-wrap gap-4 ">
             {estate.map((elem) => (
               <Card
-                className="1/4 max-w-[200px]"
+                className="md:w-[23.8%]"
                 key={elem.id}
                 thumbnail={elem.thumbnail}
                 title={elem.title}
@@ -65,7 +65,7 @@ const Home = () => {
           <div className="flex flex-col justify-between w-full md:flex-row gap-4 ">
             {watches.map((elem) => (
               <Card
-                className="1/4"
+                className="md:w-[23.8%]"
                 key={elem.id}
                 thumbnail={elem.thumbnail}
                 title={elem.title}
@@ -86,7 +86,7 @@ const Home = () => {
           <div className="flex flex-col justify-between w-full md:flex-row gap-4 ">
             {cars.map((elem) => (
               <Card
-                className="1/4"
+                className="md:w-[23.8%]"
                 key={elem.id}
                 thumbnail={elem.thumbnail}
                 title={elem.title}
@@ -107,7 +107,7 @@ const Home = () => {
           <div className="flex flex-col justify-between w-full md:flex-row gap-4">
             {yachts.map((elem) => (
               <Card
-                className="1/4"
+                className="md:w-[23.8%]"
                 key={elem.id}
                 thumbnail={elem.thumbnail}
                 title={elem.title}
@@ -129,7 +129,7 @@ const Home = () => {
             <div className="flex flex-col justify-between w-full md:flex-row gap-4 ">
               {jets.map((elem) => (
                 <Card
-                  className="1/4"
+                  className="md:w-[23.8%]"
                   key={elem.id}
                   thumbnail={elem.thumbnail}
                   title={elem.title}
