@@ -17,7 +17,7 @@ const Card = ({
   className,
 }: propTypes) => {
   return (
-    <div className={`mb-6 ${className}`}>
+    <article className={`mb-6 ${className}`}>
       <img className="w-full h-auto mb-2" src={thumbnail}></img>
       <h3 className=" mb-4 text-2xl font-light tracking-wider text-transform: uppercase  ">
         {title}
@@ -27,7 +27,7 @@ const Card = ({
       <Lin to={`/articles/${id}`}>
         <b>READ MORE</b>
       </Lin>
-    </div>
+    </article>
   );
 };
 

@@ -1,10 +1,16 @@
 import icon from "../../src/assets/images/profile.png";
 import Lin from "./Link";
 
-const PublisherCard = () => {
+interface propTypes {
+  className?: string;
+}
+
+const PublisherCard = ({ className }: propTypes) => {
   return (
-    <div className="flex gap-4">
-      <img className="w-auto h-auto " src={icon} alt="" />
+    <div className={`flex gap-4 ${className}`}>
+      <div className="flex items-center">
+        <img className="w-[44px] h-[44px] " src={icon} alt="" />
+      </div>
       <div>
         <h4>
           Ortq{" "}
@@ -12,11 +18,20 @@ const PublisherCard = () => {
             Follow
           </Lin>
         </h4>
-        <p>Published in</p>
-        <span> Astry Blog</span>
-        <div>
-          <span></span>
-          <span></span>
+        <div className="flex flex-col md:flex-row items-center  mr-1">
+          <div>
+            <span className="opacity-50 font-light text-sm mr-1">
+              Published in{" "}
+            </span>
+            <span className="text-sm font-light mr-1"> Astry Blog</span>
+          </div>
+          <span className=" hidden bg-black  m-2 w-[2px] h-[2px]  opacity-50 rounded-full md:inline "></span>
+
+          <div className="flex items-center">
+            <span className="opacity-50 font-light text-sm  ">5 min read</span>
+            <span className="  bg-black  m-2 w-[2px] h-[2px]  opacity-50 rounded-full  "></span>
+            <span className="opacity-50 font-light text-sm ">Oct 6 2023</span>
+          </div>
         </div>
       </div>
     </div>

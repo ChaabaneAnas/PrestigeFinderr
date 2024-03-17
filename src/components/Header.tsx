@@ -25,7 +25,7 @@ const Header = () => {
         />{" "}
         <p>Menu</p>
       </div>
-      <div className="w-1/3 flex flex-col justify-center items-center">
+      <div className="w-1/3 flex flex-col  justify-center items-center md:flex-row md:gap-2">
         <Link to="/" className="text-xl font-light font-serif 	">
           PRESTIGE
         </Link>
