@@ -10,7 +10,7 @@ interface propTypes {
 
 const Tabs = ({ categories, selected, data, onSelect }: propTypes) => {
   return (
-    <ul className="flex w-full mb-6">
+    <ul className="flex w-full overflow-auto mb-6">
       <TabButton
         data={data}
         categorie={"ALL"}

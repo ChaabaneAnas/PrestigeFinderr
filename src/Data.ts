@@ -37,6 +37,8 @@ export interface datatypes {
     title:string;
 }
 
+
+
 export  const data: datatypes[] = [
   
     {

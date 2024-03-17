@@ -23,7 +23,7 @@ const TabButton = ({ data, categorie, isActive, onClick }: propTypes) => {
         ({categorie === "ALL" ? data.length : filterData.length})
       </span>
       <h1
-        className={`hover:font-normale ${
+        className={`hover:font-normale text-nowrap ${
           isActive ? "font-normale" : "font-light "
         }`}
       >
